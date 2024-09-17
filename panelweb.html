@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akas Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        #produk {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .produk-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .produk-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .harga {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        button {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.4s ease;
+            
+            
+        }
+        
+        footer {
+            background-color: rgb(165, 165, 165);
+            padding: 10px 30px;
+            
+        }
+
+        header h2 {
+            font-style: italic;
+            color: greenyellow;
+           
+           
+        }
+
+        .tombol-random {
+            background-color: white;
+            color: aquamarine;
+            padding: 1px 20px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: right;
+            
+        }
+
+
+    
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gilang Panel Shop</h1>
+        <h2>Setiap hari jumat harga diskon!</h2>
+
+
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Keranjang</a></li>
+                <li><a href="https://wa.me/6285722342215">Kontak</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="tombolrandm">
+
+        <article class="tombol-random">
+            <button onclick="logOut()">Log Out</button>
+        </article>
+
+
+        
+
+    
+
+    </section>
+
+    
+
+    
+      
+
+    <section id="produk">
+        <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 1">
+            <h2>Panel 1GB</h2>
+            <p>PANEL DENGAN RAM 1GB</p>
+            <p class="harga">Rp 1.000/bulan</p>
+            <button onclick="beliSekarang('628123456789', 'Panel 1GB')">Beli Sekarang</button>
+        </article>
+
+        <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 2GB</h2>
+            <p>PANEL DENGAN RAM 2GB</p>
+            <p class="harga">Rp 2.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 2GB')">Beli Sekarang</button>
+        </article>
+
+        <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 3GB</h2>
+            <p>PANEL DENGAN RAM 3GB</p>
+            <p class="harga">Rp 3.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 3GB')">Beli Sekarang</button>
+        </article>
+
+        <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 4GB</h2>
+            <p>PANEL DENGAN RAM 4GB</p>
+            <p class="harga">Rp 4.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 4GB')">Beli Sekarang</button>
+        </article>
+
+        <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 5GB</h2>
+            <p>PANEL DENGAN RAM 5GB</p>
+            <p class="harga">Rp 5.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+        
+               <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 6GB</h2>
+            <p>PANEL DENGAN RAM 6GB</p>
+            <p class="harga">Rp 6.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+
+       <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 7GB</h2>
+            <p>PANEL DENGAN RAM 7GB</p>
+            <p class="harga">Rp 7.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+        
+               <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 8GB</h2>
+            <p>PANEL DENGAN RAM 8GB</p>
+            <p class="harga">Rp 8.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+        
+               <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 9GB</h2>
+            <p>PANEL DENGAN RAM 9GB</p>
+            <p class="harga">Rp 9.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+        
+               <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 10GB</h2>
+            <p>PANEL DENGAN RAM 10GB</p>
+            <p class="harga">Rp 10.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+        
+               <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 11GB</h2>
+            <p>PANEL DENGAN RAM 11GB</p>
+            <p class="harga">Rp 11.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+        
+               <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 12GB</h2>
+            <p>PANEL DENGAN RAM 12GB</p>
+            <p class="harga">Rp 12.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+        
+               <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel 13GB</h2>
+            <p>PANEL DENGAN RAM 13GB</p>
+            <p class="harga">Rp 13.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel 5GB')">Beli Sekarang</button>
+        </article>
+
+        <article class="produk-item">
+            <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9f7bed1018bc7ad75c94da92c83c76de/pterodactyl-panel.png" alt="Produk 2">
+            <h2>Panel Unlimited</h2>
+            <p>PANEL DENGAN RAM Tanpa Batas</p>
+            <p class="harga">Rp 14.000/bulan</p>
+            <button onclick="beliSekarang('628987654321', 'Panel Unlimited')">Beli Sekarang</button>
+        </article>
+
+        
+    </section>
+
+    <footer>
+        <h1>&copy; 2024 Akas Store. All Rights Reserved.</h1>
+<img src="https://cdn.alands.xyz/files/66e787da00c0efb28ec44858?filename=20240914_100607.jpg"alt="Produk" width="300" height="300" loading="lazy">
+                
+       
+    </footer>
+
+    <section1>
+        <h2>Hubungi Kami</h2>
+            <p>Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami.</p>
+            <p>Email: <a href="mailto:ros.susuan@gmail.com">ros.susuan@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/6285722342215?text=Halo+aku+ada+pertanyaan+nih!">Klik untuk me-nanyakan sesuatu</a></p>
+    </section1>
+
+    <script>
+        function beliSekarang(nomorWA, namaProduk) {
+            var linkWhatsApp = 'https://wa.me/' + 6285722342215 + '?text=Saya%20tertarik%20dengan%20' + encodeURIComponent(namaProduk);
+            window.open(linkWhatsApp, '_blank');
+
+        }
+
+        function logOut() {
+            window.location.href ='login.html';
+
+        }
+            
+        
+
+    </script>
+    
+
+</body>
+</html>
